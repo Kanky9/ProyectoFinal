@@ -1,0 +1,28 @@
+.welcome-message{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: #ffcc00; 
+    text-align: center;
+    margin: 0;
+    margin-top: 90px;
+    font-size: 90px;
+    width: 70%;
+    animation: colorChange 5s ease-in-out infinite; 
+    animation-fill-mode: forwards;                    /*Animación del texto*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes colorChange {
+    0% {
+      color: #e0c218de;
+    }
+    50% {
+      color: #ffffff;          /*colores para la animacion del texto del inicio*/
+    }
+    100% {
+      color: #e0c218de; 
+    }
+  }

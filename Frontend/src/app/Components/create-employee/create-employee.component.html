@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="form-container">
+        <!-- Título del formulario -->
+        <h3 class="form-title">Nuevo Empleado</h3>
+
+        <!-- Formulario -->
+        <form class="form" (ngSubmit)="onSubmit()">
+
+            <!-- Campo para el nombre del empleado -->
+            <div class="form-group">
+                <label for="FirstName">Nombre</label>
+                <!-- Entrada de texto para el nombre del empleado con enlace bidireccional [(ngModel)] -->
+                <input type="text" class="form-control" id="FirstName" [(ngModel)]="employee.firstName" name="firstName"
+                    placeholder="Ingrese el nombre del empleado">
+            </div>
+
+            <!-- Campo para el apellido del empleado -->
+            <div class="form-group">
+                <label for="LastName">Apellido</label>
+                <!-- Entrada de texto para el apellido del empleado con enlace bidireccional [(ngModel)] -->
+                <input type="text" class="form-control" id="LastName" [(ngModel)]="employee.lastName" name="lastName"
+                    placeholder="Ingrese el apellido del empleado">
+            </div>
+
+            <!-- Campo para el sueldo del empleado -->
+            <div class="form-group">
+                <label for="Salary">Sueldo</label>
+                <!-- Entrada de texto para el sueldo del empleado con enlace bidireccional [(ngModel)] -->
+                <input type="text" class="form-control" id="Salary" [(ngModel)]="employee.salary" name="salary"
+                    placeholder="Ingrese el sueldo del empleado">
+            </div>
+
+            <!-- Botón para guardar el empleado -->
+            <button type="submit" class="btn btn-success mt-3">Guardar</button>
+
+        </form>
+    </div>
+</div>

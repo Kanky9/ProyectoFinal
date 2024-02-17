@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura para centrar el contenido verticalmente */
+  }
+  
+  .form-container {
+    background-color:rgba(248, 249, 250, 0.5); /* Color de fondo */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Sombra suave */
+    padding: 30px;
+    width: 400px;
+  }
+  
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0f2b49; /* Color del título */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    border: 1px solid #ced4da; /* Borde */
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .btn {
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .btn-success {
+    background-color: #28a745; /* Color de fondo para el botón de envío */
+    border-color: #28a745;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838; /* Color de fondo al pasar el mouse sobre el botón de envío */
+    border-color: #1e7e34;
+  }

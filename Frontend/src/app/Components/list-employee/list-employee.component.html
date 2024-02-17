@@ -1,0 +1,36 @@
+<div class="cont">
+    <!-- Tabla para mostrar la lista de empleados -->
+    <table class="custom-table">
+        <thead>
+            <!-- Encabezados de la tabla -->
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Sueldo</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Inicio del bucle para iterar sobre los empleados -->
+            @for (employee of employees; track $index) {
+                <!-- Fila de la tabla para cada empleado -->
+                <tr class="fade-in">
+                    <!-- Celda para mostrar el nombre del empleado -->
+                    <td>{{employee.firstName}}</td>
+                    <!-- Celda para mostrar el apellido del empleado -->
+                    <td>{{employee.lastName}}</td>
+                    <!-- Celda para mostrar el sueldo del empleado -->
+                    <td>{{employee.salary}}</td>
+                    <!-- Celda para las acciones (editar y eliminar) -->
+                    <td>
+                        <!-- Botón para editar el empleado, llamando al método updateEmployee con el ID del empleado -->
+                        <button (click)="updateEmployee(employee.id)" class="btn btn-info me-3">Editar</button>
+                        <!-- Botón para eliminar el empleado, llamando al método deleteEmployee con el ID del empleado -->
+                        <button (click)="deleteEmployee(employee.id)" class="btn btn-danger ">Eliminar</button>
+                    </td>
+                </tr>
+            <!-- Fin del bucle -->
+            }
+        </tbody>
+    </table>
+</div>

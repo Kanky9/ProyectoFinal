@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="form-container">
+        <!-- Título del formulario -->
+        <h3 class="form-title">Editar Empleado</h3>
+
+        <!-- Inicio del formulario -->
+        <form class="form" (ngSubmit)="onSubmit()">
+
+            <!-- Campo para el nombre del empleado -->
+            <div class="form-group">
+                <label for="FirstName">Nombre</label>
+                <input type="text" class="form-control" id="FirstName" [(ngModel)]="employee.firstName" name="firstName"
+                    placeholder="Ingrese el nombre del empleado">
+            </div>
+
+            <!-- Campo para el apellido del empleado -->
+            <div class="form-group">
+                <label for="LastName">Apellido</label>
+                <input type="text" class="form-control" id="LastName" [(ngModel)]="employee.lastName" name="lastName"
+                    placeholder="Ingrese el apellido del empleado">
+            </div>
+
+            <!-- Campo para el sueldo del empleado -->
+            <div class="form-group">
+                <label for="Salary">Sueldo</label>
+                <input type="text" class="form-control" id="Salary" [(ngModel)]="employee.salary" name="salary"
+                    placeholder="Ingrese el sueldo del empleado">
+            </div>
+
+            <!-- Botón de guardar -->
+            <button type="submit" class="btn btn-success mt-3">Guardar</button>
+
+        </form>
+        <!-- Fin del formulario -->
+    </div>
+</div>
